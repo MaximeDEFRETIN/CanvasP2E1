@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Exercice 1</title>
+</head>
+<body>
+  <canvas id="canvas" width="400" height="400"></canvas>
+  <script type="text/javascript">
+  var canvas = document.getElementById('canvas');
+  var m =  canvas.getContext("2d");
+  m.beginPath();
+  m.moveTo(200,350);
+  m.lineTo(150,230);
+  m.lineTo(250,230);
+  m.closePath();
+  m.fillStyle = "#AA6522";
+  m.fill();
+  m.beginPath();
+  m.fillStyle="#8A0908";
+  m.moveTo(150,230);
+  m.quadraticCurveTo(200,120,250,230);
+  m.fill();
+  </script>
+</body>
+</html>
